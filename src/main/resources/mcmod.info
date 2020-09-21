@@ -1,0 +1,11 @@
+[
+  {
+    "modid": "skydome",
+    "name": "SkyDome",
+    "version": "${version}",
+    "mcversion": "1.8.9",
+    "authorList": [
+      "TIVJ-dev"
+    ]
+  }
+]
