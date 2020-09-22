@@ -6,6 +6,7 @@ This also brings the possibility to use 360° images (meaning HDRI images, but m
 ## How to use
 I do not recommend using this mod if you don't necessarily need it, since it will make your game's performance worse (not by much if you use low settings, but still little).
 If you are using Optifine, it is highly recommended for you to turn off fog in the game for the best experience. (For 1.8.9 Optifine L5: ESC -> Options -> Video Settings -> Details -> Fog)
+This mod may cause issues with shaders, and I have no idea how to fix it.
 
 ## Installation:  
 Download the latest release from the [releases page](https://github.com/UserTeemu/SkyDome/releases) for the correct Minecraft version anbd mod loader. (or build the jar yourself if you know how)
