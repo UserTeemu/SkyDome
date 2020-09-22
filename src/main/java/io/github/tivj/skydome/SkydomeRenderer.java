@@ -27,6 +27,7 @@ public class SkydomeRenderer {
     }
 
     public void renderSky() {
+        GlStateManager.color(1F, 1F, 1F, 1F);
         GlStateManager.disableCull();
         GlStateManager.depthMask(false);
         GlStateManager.disableLighting();
