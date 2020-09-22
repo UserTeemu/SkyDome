@@ -45,6 +45,36 @@ public class SkyDomeConfig extends Vigilant {
     private int domeStacks = 32;
 
     @Property(
+            type = PropertyType.SLIDER,
+            name = "Dome X Rotation",
+            category = "SkyDome",
+            subcategory = "Settings",
+            description = "Rotates the dome",
+            max = 360
+    )
+    private int domeXRotation = 0;
+
+    @Property(
+            type = PropertyType.SLIDER,
+            name = "Dome Y Rotation",
+            category = "SkyDome",
+            subcategory = "Settings",
+            description = "Rotates the dome",
+            max = 360
+    )
+    private int domeYRotation = 0;
+
+    @Property(
+            type = PropertyType.SLIDER,
+            name = "Dome Z Rotation",
+            category = "SkyDome",
+            subcategory = "Settings",
+            description = "Rotates the dome",
+            max = 360
+    )
+    private int domeZRotation = 0;
+
+    @Property(
             type = PropertyType.SWITCH,
             name = "Enabled",
             category = "SkyDome",
@@ -63,6 +93,16 @@ public class SkyDomeConfig extends Vigilant {
 
     public int getDomeStacks() {
         return domeStacks;
+    }
+
+    public int getDomeXRotation() {
+        return domeXRotation;
+    }
+    public int getDomeYRotation() {
+        return domeYRotation;
+    }
+    public int getDomeZRotation() {
+        return domeZRotation;
     }
 
     public boolean isEnabled() {

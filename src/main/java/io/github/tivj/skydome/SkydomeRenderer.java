@@ -18,11 +18,11 @@ public class SkydomeRenderer {
 
     private void renderSphere() {
         GlStateManager.pushMatrix();
-        GlStateManager.disableLighting();
         GlStateManager.rotate(90, 1, 0, 0);
-        GlStateManager.translate(0, 0, 2);
+        GlStateManager.rotate(config.getDomeXRotation(), 1, 0, 0);
+        GlStateManager.rotate(config.getDomeYRotation(), 0, 1, 0);
+        GlStateManager.rotate(config.getDomeZRotation(), 0, 0, 1);
         s.draw(config.getRadius(), config.getDomeSlices(), config.getDomeStacks());
-        GlStateManager.enableLighting();
         GlStateManager.popMatrix();
     }
 
