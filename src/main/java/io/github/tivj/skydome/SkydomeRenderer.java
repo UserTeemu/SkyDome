@@ -22,6 +22,7 @@ public class SkydomeRenderer {
         GlStateManager.rotate(config.getDomeXRotation(), 1, 0, 0);
         GlStateManager.rotate(config.getDomeYRotation(), 0, 1, 0);
         GlStateManager.rotate(config.getDomeZRotation(), 0, 0, 1);
+        GlStateManager.translate(config.getDomeXOffset(), config.getDomeYOffset(), config.getDomeZOffset());
         s.draw(config.getRadius(), config.getDomeSlices(), config.getDomeStacks());
         GlStateManager.popMatrix();
     }
@@ -30,10 +31,8 @@ public class SkydomeRenderer {
         GlStateManager.color(1F, 1F, 1F, 1F);
         GlStateManager.disableCull();
         GlStateManager.depthMask(false);
-        GlStateManager.disableLighting();
         Minecraft.getMinecraft().getTextureManager().bindTexture(sky);
         renderSphere();
-        GlStateManager.enableLighting();
         GlStateManager.depthMask(true);
         GlStateManager.enableCull();
     }
