@@ -1,10 +1,9 @@
-package dev.userteemu.skydome.asm.tweaker;
+package dev.userteemu.skydome.asm;
 
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;
 import dev.userteemu.skydome.asm.modifications.EntityRendererTransformer;
 import dev.userteemu.skydome.SkyDomeMain;
-import dev.userteemu.skydome.asm.tweaker.transformer.ITransformer;
 import net.minecraft.launchwrapper.IClassTransformer;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassWriter;

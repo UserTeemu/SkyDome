@@ -1,4 +1,4 @@
-package dev.userteemu.skydome.asm.tweaker.transformer;
+package dev.userteemu.skydome.asm;
 
 import net.minecraftforge.fml.common.asm.transformers.deobf.FMLDeobfuscatingRemapper;
 import org.objectweb.asm.tree.*;

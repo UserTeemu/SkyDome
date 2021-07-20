@@ -1,6 +1,6 @@
 package dev.userteemu.skydome.asm.modifications;
 
-import dev.userteemu.skydome.asm.tweaker.transformer.ITransformer;
+import dev.userteemu.skydome.asm.ITransformer;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.tree.*;
 

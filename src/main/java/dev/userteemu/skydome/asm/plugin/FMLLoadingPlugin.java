@@ -1,5 +1,6 @@
-package dev.userteemu.skydome.asm.tweaker;
+package dev.userteemu.skydome.asm.plugin;
 
+import dev.userteemu.skydome.asm.ClassTransformer;
 import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin;
 
 import java.util.Map;

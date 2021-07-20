@@ -30,7 +30,7 @@ minecraft {
     mappings = "stable_22"
     makeObfSourceJar = false
     clientRunArgs += "--tweakClass gg.essential.loader.stage0.EssentialSetupTweaker" // needed to run Essential in dev env
-    clientJvmArgs += "-Dfml.coreMods.load=dev.userteemu.skydome.asm.tweaker.FMLLoadingPlugin" // needed to use the fml plugin in dev env
+    clientJvmArgs += "-Dfml.coreMods.load=dev.userteemu.skydome.asm.plugin.FMLLoadingPlugin" // needed to use the fml plugin in dev env
 
     replaceIn "SkyDomeMain.java"
     replace "@MOD_VERSION@", project.version
@@ -73,7 +73,7 @@ jar.enabled = false
 jar {
     manifest {
         attributes(
-                "FMLCorePlugin": "dev.userteemu.skydome.asm.tweaker.FMLLoadingPlugin",
+                "FMLCorePlugin": "dev.userteemu.skydome.asm.plugin.FMLLoadingPlugin",
                 "TweakClass": "gg.essential.loader.stage0.EssentialSetupTweaker",
                 "TweakOrder": "0",
                 "FMLCorePluginContainsFMLMod": true,
