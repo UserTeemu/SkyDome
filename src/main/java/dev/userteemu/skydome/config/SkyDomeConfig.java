@@ -1,16 +1,22 @@
-package dev.userteemu.skydome;
+package dev.userteemu.skydome.config;
 
+import dev.userteemu.skydome.SkyDomeMain;
 import gg.essential.vigilance.Vigilant;
+import gg.essential.vigilance.data.JVMAnnotationPropertyCollector;
 import gg.essential.vigilance.data.Property;
 import gg.essential.vigilance.data.PropertyType;
 
 import java.io.File;
+import java.util.Arrays;
+import java.util.List;
 
 public class SkyDomeConfig extends Vigilant {
     public SkyDomeConfig() {
-        super(new File("./config/skydome.toml"));
+        super(new File("./config/skydome.toml"), "Settings", new JVMAnnotationPropertyCollector(), new SkyDomeConfigOrder());
         initialize();
     }
+
+    static List<String> subcategoryOrder = Arrays.asList("Quality", "Rotation", "Offset");
 
     @Property(
             type = PropertyType.SWITCH,

@@ -1,5 +1,6 @@
 package dev.userteemu.skydome;
 
+import dev.userteemu.skydome.config.SkyDomeConfig;
 import gg.essential.api.EssentialAPI;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;

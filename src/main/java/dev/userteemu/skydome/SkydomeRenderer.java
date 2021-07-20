@@ -1,5 +1,6 @@
 package dev.userteemu.skydome;
 
+import dev.userteemu.skydome.config.SkyDomeConfig;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.util.ResourceLocation;

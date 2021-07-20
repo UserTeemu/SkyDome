@@ -48,8 +48,8 @@ public class EntityRendererTransformer implements ITransformer {
         InsnList list = new InsnList();
         LabelNode end = new LabelNode();
         list.add(new FieldInsnNode(Opcodes.GETSTATIC, "dev/userteemu/skydome/SkyDomeMain", "INSTANCE", "Ldev/userteemu/skydome/SkyDomeMain;"));
-        list.add(new FieldInsnNode(Opcodes.GETFIELD, "dev/userteemu/skydome/SkyDomeMain", "config", "Ldev/userteemu/skydome/SkyDomeConfig;"));
-        list.add(new MethodInsnNode(Opcodes.INVOKEVIRTUAL, "dev/userteemu/skydome/SkyDomeConfig", "isEnabled", "()Z", false));
+        list.add(new FieldInsnNode(Opcodes.GETFIELD, "dev/userteemu/skydome/SkyDomeMain", "config", "Ldev/userteemu/skydome/config/SkyDomeConfig;"));
+        list.add(new MethodInsnNode(Opcodes.INVOKEVIRTUAL, "dev/userteemu/skydome/config/SkyDomeConfig", "isEnabled", "()Z", false));
         list.add(new JumpInsnNode(Opcodes.IFEQ, end));
         list.add(new FieldInsnNode(Opcodes.GETSTATIC, "dev/userteemu/skydome/SkyDomeMain", "INSTANCE", "Ldev/userteemu/skydome/SkyDomeMain;"));
         list.add(new FieldInsnNode(Opcodes.GETFIELD, "dev/userteemu/skydome/SkyDomeMain", "renderer", "Ldev/userteemu/skydome/SkydomeRenderer;"));

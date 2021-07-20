@@ -29,8 +29,7 @@ public class ClassTransformer implements IClassTransformer {
                 }
             }
         } catch (IOException e) {
-            e.printStackTrace();
-            SkyDomeMain.LOGGER.info("Something went wrong, or the user doesn't have Optifine");
+            SkyDomeMain.LOGGER.warn("Something went wrong, or the user doesn't have Optifine", e);
         }
 
         registerTransformer(new EntityRendererTransformer());
