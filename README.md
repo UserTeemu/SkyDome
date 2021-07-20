@@ -9,9 +9,9 @@ If you are using Optifine, it is highly recommended for you to turn off fog in t
 This mod may cause issues with shaders, and I have no idea how to fix it.
 
 ## Installation:  
-Download the latest release from the [releases page](https://github.com/UserTeemu/SkyDome/releases) for the correct Minecraft version anbd mod loader. (or build the jar yourself if you know how)
+Download the latest release from the [releases page](https://github.com/UserTeemu/SkyDome/releases) for the correct Minecraft version and mod loader. (or build the jar yourself if you know how)
 Then just put the jar into your mods folder.  
-The mod will automatically download [Sk1er LLC's ModCore](https://sk1er.club/modcore) (a required dependency) if you don't already have it.
+The mod will automatically download [Essential](https://essential.gg) if you don't already have it. It's an essential library (sorry for the pun).
 
 ## Setting the texture
 You need to put the sky texture in a resource pack. The sky texture's location and name should be `assets/skydome/sky.png`.  

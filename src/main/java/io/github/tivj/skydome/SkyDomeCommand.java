@@ -1,6 +1,6 @@
 package io.github.tivj.skydome;
 
-import club.sk1er.mods.core.ModCore;
+import gg.essential.api.EssentialAPI;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.ICommandSender;
 
@@ -31,7 +31,7 @@ public class SkyDomeCommand extends CommandBase {
      */
     @Override
     public void processCommand(ICommandSender sender, String[] args) {
-        ModCore.getInstance().getGuiHandler().open(SkyDomeMain.INSTANCE.config.gui());
+        EssentialAPI.getInstance().guiUtil().openScreen(SkyDomeMain.INSTANCE.config.gui());
     }
 
     @Override

@@ -1,7 +1,5 @@
 package io.github.tivj.skydome;
 
-import io.github.tivj.skydome.modcore.ModCoreInstaller;
-import net.minecraft.client.Minecraft;
 import net.minecraftforge.client.ClientCommandHandler;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
@@ -28,8 +26,6 @@ public class SkyDomeMain {
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
-        ModCoreInstaller.initializeModCore(Minecraft.getMinecraft().mcDataDir);
-
         (config = new SkyDomeConfig()).preload();
         renderer = new SkydomeRenderer(config);
 
