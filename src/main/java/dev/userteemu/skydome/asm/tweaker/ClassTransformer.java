@@ -1,10 +1,10 @@
-package io.github.tivj.skydome.asm.tweaker;
+package dev.userteemu.skydome.asm.tweaker;
 
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;
-import io.github.tivj.skydome.SkyDomeMain;
-import io.github.tivj.skydome.asm.modifications.EntityRendererTransformer;
-import io.github.tivj.skydome.asm.tweaker.transformer.ITransformer;
+import dev.userteemu.skydome.asm.modifications.EntityRendererTransformer;
+import dev.userteemu.skydome.SkyDomeMain;
+import dev.userteemu.skydome.asm.tweaker.transformer.ITransformer;
 import net.minecraft.launchwrapper.IClassTransformer;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassWriter;

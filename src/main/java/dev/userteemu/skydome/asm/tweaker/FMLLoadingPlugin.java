@@ -1,4 +1,4 @@
-package io.github.tivj.skydome.asm.tweaker;
+package dev.userteemu.skydome.asm.tweaker;
 
 import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin;
 

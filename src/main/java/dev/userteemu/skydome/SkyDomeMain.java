@@ -1,4 +1,4 @@
-package io.github.tivj.skydome;
+package dev.userteemu.skydome;
 
 import gg.essential.api.EssentialAPI;
 import net.minecraftforge.common.MinecraftForge;

@@ -1,4 +1,4 @@
-package io.github.tivj.skydome;
+package dev.userteemu.skydome;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;

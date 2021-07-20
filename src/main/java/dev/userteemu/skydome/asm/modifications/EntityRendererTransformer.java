@@ -1,6 +1,6 @@
-package io.github.tivj.skydome.asm.modifications;
+package dev.userteemu.skydome.asm.modifications;
 
-import io.github.tivj.skydome.asm.tweaker.transformer.ITransformer;
+import dev.userteemu.skydome.asm.tweaker.transformer.ITransformer;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.tree.*;
 
@@ -47,13 +47,13 @@ public class EntityRendererTransformer implements ITransformer {
     private InsnList renderSkydome(LabelNode label) {
         InsnList list = new InsnList();
         LabelNode end = new LabelNode();
-        list.add(new FieldInsnNode(Opcodes.GETSTATIC, "io/github/tivj/skydome/SkyDomeMain", "INSTANCE", "Lio/github/tivj/skydome/SkyDomeMain;"));
-        list.add(new FieldInsnNode(Opcodes.GETFIELD, "io/github/tivj/skydome/SkyDomeMain", "config", "Lio/github/tivj/skydome/SkyDomeConfig;"));
-        list.add(new MethodInsnNode(Opcodes.INVOKEVIRTUAL, "io/github/tivj/skydome/SkyDomeConfig", "isEnabled", "()Z", false));
+        list.add(new FieldInsnNode(Opcodes.GETSTATIC, "dev/userteemu/skydome/SkyDomeMain", "INSTANCE", "Ldev/userteemu/skydome/SkyDomeMain;"));
+        list.add(new FieldInsnNode(Opcodes.GETFIELD, "dev/userteemu/skydome/SkyDomeMain", "config", "Ldev/userteemu/skydome/SkyDomeConfig;"));
+        list.add(new MethodInsnNode(Opcodes.INVOKEVIRTUAL, "dev/userteemu/skydome/SkyDomeConfig", "isEnabled", "()Z", false));
         list.add(new JumpInsnNode(Opcodes.IFEQ, end));
-        list.add(new FieldInsnNode(Opcodes.GETSTATIC, "io/github/tivj/skydome/SkyDomeMain", "INSTANCE", "Lio/github/tivj/skydome/SkyDomeMain;"));
-        list.add(new FieldInsnNode(Opcodes.GETFIELD, "io/github/tivj/skydome/SkyDomeMain", "renderer", "Lio/github/tivj/skydome/SkydomeRenderer;"));
-        list.add(new MethodInsnNode(Opcodes.INVOKEVIRTUAL, "io/github/tivj/skydome/SkydomeRenderer", "renderSky",  "()V", false));
+        list.add(new FieldInsnNode(Opcodes.GETSTATIC, "dev/userteemu/skydome/SkyDomeMain", "INSTANCE", "Ldev/userteemu/skydome/SkyDomeMain;"));
+        list.add(new FieldInsnNode(Opcodes.GETFIELD, "dev/userteemu/skydome/SkyDomeMain", "renderer", "Ldev/userteemu/skydome/SkydomeRenderer;"));
+        list.add(new MethodInsnNode(Opcodes.INVOKEVIRTUAL, "dev/userteemu/skydome/SkydomeRenderer", "renderSky",  "()V", false));
         list.add(new JumpInsnNode(Opcodes.GOTO, label));
         list.add(end);
         return list;
