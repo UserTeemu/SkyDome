@@ -34,7 +34,7 @@ public class EntityRendererTransformer implements ITransformer {
                     } else {
                         if (node.getOpcode() == Opcodes.GETFIELD && node.getNext().getNext().getOpcode() == Opcodes.IF_ICMPLT && node.getNext().getOpcode() == Opcodes.ICONST_4) {
                             String fieldName = mapFieldNameFromNode(node);
-                            if (fieldName.equals("field_72739_F") || fieldName.equals("renderDistanceChunks")) {
+                            if (fieldName.equals("field_151451_c") || fieldName.equals("renderDistanceChunks")) {
                                 methodNode.instructions.insertBefore(node.getPrevious().getPrevious().getPrevious(), renderSkydome(((JumpInsnNode) node.getNext().getNext()).label));
                             }
                         }
