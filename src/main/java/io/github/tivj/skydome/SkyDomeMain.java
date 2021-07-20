@@ -1,6 +1,6 @@
 package io.github.tivj.skydome;
 
-import net.minecraftforge.client.ClientCommandHandler;
+import gg.essential.api.EssentialAPI;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -12,7 +12,7 @@ public class SkyDomeMain {
     public static final String MODID = "skydome";
     public static final String NAME = "SkyDome";
     public static final String VERSION = "@MOD_VERSION@";
-    public static final Logger LOGGER = LogManager.getLogger("Skydome");
+    public static final Logger LOGGER = LogManager.getLogger("SkyDome");
 
     public SkydomeRenderer renderer;
     public SkyDomeConfig config;
@@ -29,7 +29,7 @@ public class SkyDomeMain {
         (config = new SkyDomeConfig()).preload();
         renderer = new SkydomeRenderer(config);
 
-        ClientCommandHandler.instance.registerCommand(new SkyDomeCommand());
+        EssentialAPI.getCommandRegistry().registerCommand(new SkyDomeCommand());
         MinecraftForge.EVENT_BUS.register(this);
     }
 }
